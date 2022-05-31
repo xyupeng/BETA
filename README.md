@@ -1,5 +1,5 @@
 # Divide to Adapt: Mitigating Confirmation Bias for Domain Adaptation of Black-Box Predictors
-This repo is the official implementation of ["Divide to Adapt: Mitigating Confirmation Bias for Domain Adaptation of Black-Box Predictors"](url_here).
+This repo is the official implementation of ["Divide to Adapt: Mitigating Confirmation Bias for Domain Adaptation of Black-Box Predictors"](https://arxiv.org/abs/2205.14467).
 Our method is termed as **BETA**.
 
 ## Environment
