@@ -16,7 +16,7 @@ Our method is termed as **BETA**. To cite this work:
 2. `pip install -r requirements.txt`
 
 ## Datasets
-Please download and organize the datasets in this structure:
+Please download and organize the [datasets](https://github.com/jindongwang/transferlearning/blob/master/data/dataset.md) in this structure:
 ```
 BETA
 ├── data
