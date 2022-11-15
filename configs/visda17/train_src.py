@@ -41,7 +41,7 @@ data = dict(
 )
 
 # training optimizer & scheduler
-epochs = 1
+epochs = 20
 lr = 0.01
 optimizer = dict(type='SGD', lr=lr, momentum=0.9, weight_decay=1e-3, nesterov=True)
 
