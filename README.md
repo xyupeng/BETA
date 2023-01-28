@@ -10,6 +10,10 @@ Our method is termed as **BETA**. To cite this work:
 }
 ```
 
+## News
+
+**2023-01-21**: The paper was accepted by **ICLR 2023** as **spotlight** (notable-top-25%)!
+
 ## Environment
 
 1. Install `pytorch` and `torchvision` (we use `pytorch==1.9.1` and `torchvision==0.10.1`).
