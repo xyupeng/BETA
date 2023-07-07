@@ -20,22 +20,27 @@ Our method is termed as **BETA**. To cite this work:
 2. `pip install -r requirements.txt`
 
 ## Datasets
-Please download and organize the [datasets](https://github.com/jindongwang/transferlearning/blob/master/data/dataset.md) in this structure:
+Please download and organize the [datasets](https://github.com/jindongwang/transferlearning/blob/master/data/dataset.md) 
+as the following structure, where `DN_domain` for DomainNet is `clipart/infograph/painting/quickdraw/real/sketch`
 ```
-BETA
-├── data
-    ├── office_home
+BETA/
+├── data/
+    ├── office_home/
     │   ├── Art
     │   ├── Clipart
     │   ├── Product
     │   ├── Real World
-    ├── office31
+    ├── office31/
     │   ├── amazon
     │   ├── dslr
     │   ├── webcam
-    ├── visda17
+    ├── visda17/
     │   ├── train
     │   ├── validation 
+    ├── DomainNet/
+    │   ├── ${DN_domain}/
+    │   ├── ${DN_domain}_train.txt
+    │   ├── ${DN_domain}_test.txt
 ```
 
 Then generate info files with the following commands:
@@ -76,6 +81,19 @@ python train_src_v2.py configs/visda17/train_src.py
 
 # adapt with BETA
 python train_BETA.py configs/visda17/BETA.py
+```
+
+## Train on DomainNet
+```
+# C/I/P/Q/R/S stands for clipart/infograph/painting/quickdraw/real/sketch respectively
+SRC=C
+TGT=I
+
+# train source model
+python train_src_v2.py configs/DomainNet/src_${SRC}/train_src_${SRC}.py
+
+# adapt with BETA
+python train_BETA.py configs/DomainNet/src_${SRC}/BETA_${TGT}.py
 ```
 
 ## Easy-hard domain division
